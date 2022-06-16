@@ -1,6 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "cache":{
+        "enabled":false
+    }
+  },
   "newProjectRoot": "projects",
   "projects": {
     "cookies-and-cakes": {
@@ -31,9 +36,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+                "node_modules/bootstrap/scss/bootstrap.scss",
+                "src/styles.scss"
+
             ],
-            "scripts": []
+            "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
